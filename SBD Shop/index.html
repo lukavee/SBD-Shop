@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SBD Shop</title>
+  </head>
+  <body>
+    <h1>Powerlifting shop</h1>
+
+    <div class="container">
+      <div class="items">
+        <div class="single-item">
+          <img src="img/pojas1.jpg" />
+          <div class="si-content">
+            <h3>Belt</h3>
+            <p class="price">$70</p>
+          </div>
+          <div class="actions">
+            <input type="number" name="quantity" value="0" min="0" />
+            <button onclick="addToCart(this)">Dodaj</button>
+          </div>
+        </div>
+
+        <div class="single-item">
+          <img src="img/wraps.jfif" />
+          <div class="si-content">
+            <h3>Wrist wraps</h3>
+            <p class="price">$20</p>
+          </div>
+          <div class="actions">
+            <input type="number" name="quantity" value="0" min="0" />
+            <button onclick="addToCart(this)">Dodaj</button>
+          </div>
+        </div>
+
+        <div class="single-item">
+          <img src="img/knee sleeves.jpg" />
+          <div class="si-content">
+            <h3>Knee sleeves</h3>
+            <p class="price">$50</p>
+          </div>
+          <div class="actions">
+            <input type="number" name="quantity" value="0" min="0" />
+            <button onclick="addToCart(this)">Dodaj</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart">
+        <h2>Korpa</h2>
+
+        <div class="cart-items"></div>
+
+        <div class="total"></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
